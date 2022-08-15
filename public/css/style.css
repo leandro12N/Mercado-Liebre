@@ -7,6 +7,16 @@ header{
 #search{
     padding-left: 20px;
 }
+#lupa{
+    background-color: #ebebebe0;
+    padding: 2px;
+    border: solid 1px #000000 ;
+    margin: 1px;
+}
+main{
+    width: 90%;
+    margin: 10px auto;
+}
 h2{
     font-size: 24px;
 }
