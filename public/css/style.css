@@ -1,38 +1,136 @@
-*{
+* {
     font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-header{
-    background-color:  #EAC926;
+.encabezado{
+    display: flex;
+    justify-content: space-around;
 }
-#search{
+.encabezadoinferior{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+.encabezadoinferior ul{
+    display: flex;
+}
+.encabezadoinferior ul li{
+    margin: 0 10px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+#logo{
+    width: 300px;
+}
+
+.baner {
+    width: 100%;
+}
+
+body {
+    background-color: rgb(215, 210, 210);
+    margin: 0px;
+}
+div{
+    border-top: 5px;
+}
+.descuento{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 25px;
+   border-top: solid 5px black;
+}
+.descuento .precio{
+    flex-grow: 0.3;
+}
+.descuento .descripcion1{
+    flex-grow: 0.7;
+}
+
+#camion {
+    display: block;
+    font-size: 16px;
+    color: #39b54a;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    top: -15px;
+    left: 90%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+article {
+    background-color: white;
+    width: 200px;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    margin: 10px auto;
+    flex-direction: column;
+}
+
+header {
+    font-size: unset;
+    padding: 10px;
+    background-color: #EAC926;
+}
+
+#search {
     padding-left: 20px;
 }
-#lupa{
+
+#lupa {
     background-color: #ebebebe0;
     padding: 2px;
-    border: solid 1px #000000 ;
+    border: solid 1px #000000;
     margin: 1px;
 }
-main{
+
+main {
     width: 90%;
     margin: 10px auto;
+    background-color: rgb(215, 210, 210);
 }
-h2{
+
+h2 {
+    color: rgb(54, 54, 54);
     font-size: 24px;
 }
-.precio{
+
+.precio {
     font-size: 18px;
 }
-.descripcion{
+
+.descripcion {
     font-size: 16px;
 }
-h3{
-    color: #666;
+
+.descripcion1 {
+    font-size: 16px;
+    color: limegreen;
 }
-#texto{
-  text-align: center;
+
+h3 {
+    color: rgb(70, 70, 70);
 }
-.burger-menu{
+
+#texto {
+    text-align: center;
+}
+
+.burger-menu {
     text-align: center;
     color: white;
     font-size: 30px;
@@ -45,21 +143,96 @@ h3{
     width: fit-content;
     margin: auto;
 }
-footer{
+
+footer {
     text-align: center;
+    background-color: white;
+    margin-bottom: 0%
 }
-#copy{
+
+#copy {
     text-align: left;
+    margin: 0%;
 }
-#color{
+
+#color {
     color: #1259c3;
     font-size: 2em;
 }
-#colorr{
+
+#colorr {
     color: #1259c3;
     font-size: 2em;
 }
-#colorrr{
+
+#colorrr {
     color: #1259c3;
     font-size: 2em;
+}
+.encabezadoinferior{
+    display: none;
+}
+
+@media(min-width: 360px) {
+
+    section{
+        flex-direction: column;
+    }
+
+    .descripcion {
+        display: none;
+        visibility: hidden;
+    }
+
+}
+
+@media(min-width: 768px) {
+
+    article {
+        width: 50%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .burger-menu {
+        display: none;
+        visibility: hidden;
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        flex-grow: 0.5;
+    }
+    .encabezadoinferior{
+        display: flex;
+    }
+}
+
+@media(min-width: 1024px){
+
+    article {
+        width: 0%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        flex-grow: 0.5;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 0.5;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    .burger-menu {
+        display: none;
+        visibility: hidden;
+    }
 }
