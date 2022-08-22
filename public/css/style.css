@@ -20,6 +20,9 @@
     margin: 0 10px;
 }
 
+input{
+    align-items: stretch;
+}
 img {
     display: block;
     width: 100%;
@@ -30,7 +33,12 @@ img {
 
 .baner {
     width: 100%;
-}
+    }
+
+#search {
+    padding-left: 20px;
+ }
+
 
 body {
     background-color: rgb(215, 210, 210);
@@ -42,8 +50,7 @@ div{
 .descuento{
    display: flex;
    justify-content: space-between;
-   margin-top: 25px;
-   border-top: solid 5px black;
+   border-top: solid 2px rgb(215, 210, 210);
 }
 .descuento .precio{
     flex-grow: 0.3;
@@ -85,10 +92,6 @@ header {
     font-size: unset;
     padding: 10px;
     background-color: #EAC926;
-}
-
-#search {
-    padding-left: 20px;
 }
 
 #lupa {
@@ -173,7 +176,10 @@ footer {
     display: none;
 }
 
-@media(min-width: 360px) {
+@media(max-width: 767px) {
+    .encabezado{
+        flex-wrap: wrap;
+    }
 
     section{
         flex-direction: column;
@@ -183,7 +189,10 @@ footer {
         display: none;
         visibility: hidden;
     }
-
+    #logo, #search{
+        flex-grow: 0.5;
+        align-content: stretch;
+    }
 }
 
 @media(min-width: 768px) {
