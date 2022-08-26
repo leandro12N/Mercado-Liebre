@@ -56,6 +56,7 @@ header {
     font-size: unset;
     padding: 10px;
     background-color: #EAC926;
+
 }
 
 #lupa {
@@ -101,6 +102,14 @@ form{
 display: flex;
 flex-direction: column;
 }
+.boton p input{
+    color: white;
+    background-color: #1259c3;
+}
+.boton2 p input{
+    color: white;
+    background-color: rgb(130, 28, 28);
+}
 h3 {
     color: rgb(70, 70, 70);
 }
@@ -123,31 +132,51 @@ h3 {
     margin: auto;
 }
 
-footer {
-    text-align: center;
-    background-color: white;
-    margin-bottom: 0%
-}
-
 #copy {
     text-align: left;
     margin: 0%;
 }
 
-#color {
+footer {
+    text-align: center;
+    background-color: white;
+    margin-bottom: 0%;
+    padding-top: 2rem;
+
+}
+footer .maxfooter{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+footer i {
     color: #1259c3;
     font-size: 2em;
 }
 
-#colorr {
-    color: #1259c3;
-    font-size: 2em;
+.encabezadoinferior{
+    display: none;
 }
 
-#colorrr {
-    color: #1259c3;
-    font-size: 2em;
+footer .maxfooter .minifooter{
+    display: flex;
+    width: 20rem;
+    height: 15rem;
+    flex-direction: column;
 }
+
+#card:hover {
+   color: brown;
+}
+
+#regalo:hover {
+    color: brown;
+ }
+
+ #persona:hover {
+    color: brown;
+ }
 
 @media(max-width: 767px) {
     .encabezado{
