@@ -37,6 +37,8 @@ img {
 
 #search {
     padding-left: 20px;
+    display: flex;
+    height: 25px;
  }
 
 
