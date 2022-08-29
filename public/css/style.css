@@ -225,6 +225,8 @@ footer .maxfooter .minifooter{
     }
     article{
         margin: 1rem auto;
+        width: 80%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
 
